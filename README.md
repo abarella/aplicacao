@@ -70,4 +70,5 @@ This application uses the ADMINLTE template as a base.<br>
 The database used is SQL Server and must be configured in php.ini.<br>
 extension=php_pdo_sqlsrv_82_ts_x64.dll<br>
 extension=php_sqlsrv_82_ts_x64.dll<br>
+PHP version 8.2.15<br>
 
