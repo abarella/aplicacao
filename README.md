@@ -66,8 +66,8 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Purpose
-This application uses the ADMINLTE template as a base.
-The database used is SQL Server and must be configured in php.ini.
-extension=php_pdo_sqlsrv_82_ts_x64.dll
-extension=php_sqlsrv_82_ts_x64.dll
+This application uses the ADMINLTE template as a base.<br>
+The database used is SQL Server and must be configured in php.ini.<br>
+extension=php_pdo_sqlsrv_82_ts_x64.dll<br>
+extension=php_sqlsrv_82_ts_x64.dll<br>
 
