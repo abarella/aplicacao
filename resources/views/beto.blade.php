@@ -134,7 +134,7 @@
                                     //dd($config);
                                     $config['paging'] = true;
                                     $config["lengthMenu"] = [3, 5, 50, 100, 500];
-                                    $config['language'] = [ 'url' => 'http://cdn.datatables.net/plug-ins/2.0.7/i18n/pt-BR.json' ];
+                                    $config['language'] = [ 'url' => 'https://cdn.datatables.net/plug-ins/2.0.7/i18n/pt-BR.json' ];
                                 @endphp
                             <x-adminlte-datatable id="table1" :heads="$heads" head-theme="light" :config="$config"
                             striped hoverable bordered compressed compact with-buttons>
@@ -173,7 +173,7 @@
                                     $config1['paging'] = true;
 
                                     //$config1["lengthMenu"] = [3, 5, 50, 100, 500];
-                                    $config1['language'] = [ 'url' => 'http://cdn.datatables.net/plug-ins/2.0.7/i18n/pt-BR.json' ];
+                                    $config1['language'] = [ 'url' => 'https://cdn.datatables.net/plug-ins/2.0.7/i18n/pt-BR.json' ];
 
 
                                 @endphp
