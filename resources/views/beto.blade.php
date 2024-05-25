@@ -28,14 +28,17 @@
                                 <x-adminlte-button class="btn-flat" type="submit" label="Salvar" theme="success" icon="fas fa-lg fa-save"/>
                                 <x-adminlte-button class="btn-lg" type="reset" label="Reset" theme="outline-danger" icon="fas fa-lg fa-trash"/>
                                 <x-adminlte-button class="btn-sm bg-gradient-info" type="button" label="Help" icon="fas fa-lg fa-question"/>
+                                <hr>
                                 <x-adminlte-input name="iBasic"/>
+
                                 <x-adminlte-select2 name="sel2Basic">
                                     <option>Option 1</option>
                                     <option disabled>Option 2</option>
                                     <option selected>Option 3</option>
                                 </x-adminlte-select2>
-                                <x-adminlte-select2 name="sel2Vehicle" label="Vehicle" label-class="text-lightblue"
-                                    igroup-size="lg" data-placeholder="Select an option...">
+
+                                <x-adminlte-select2 name="sel2Vehicle" label="Carros" label-class="text-lightblue"
+                                    igroup-size="sm" data-placeholder="Select an option...">
                                     <x-slot name="prependSlot">
                                         <div class="input-group-text bg-gradient-info">
                                             <i class="fas fa-car-side"></i>
@@ -51,7 +54,7 @@
                                     "allowClear" => true,
                                 ];
                                 @endphp
-                                <x-adminlte-textarea name="taDesc" label="Description" rows=5 label-class="text-warning"
+                                <x-adminlte-textarea name="taDesc" label="Description" rows=5 label-class="text-lightblue"
                                     igroup-size="sm" placeholder="Insert description...">
                                     <x-slot name="prependSlot">
                                         <div class="input-group-text bg-dark">
@@ -61,7 +64,7 @@
                                 </x-adminlte-textarea>
 
 
-                                <x-adminlte-select2 id="sel2Category" name="sel2Category[]" label="Categories"
+                                <x-adminlte-select2 id="sel2Category" name="sel2Category[]" label="Categorias"
                                     label-class="text-danger" igroup-size="sm" :config="$config3" multiple>
                                     <x-slot name="prependSlot">
                                         <div class="input-group-text bg-gradient-red">
@@ -84,15 +87,12 @@
                                     "startDate" => "js:moment().subtract(6, 'days')",
                                     "endDate" => "js:moment()",
                                     "locale" => ["format" => "DD/MM/YYYY HH:mm"],
-
+                                    "language" => "es",
                                 ];
                                 @endphp
                                 <x-adminlte-date-range name="drDisabled" :config="$config4" readonly />
 
-                                @php
-                                    //$result =  App\Http\Controllers\BetoController::func3();
-                                    //print_r($result);
-                                @endphp
+
 
                             </div>
                         </div>
@@ -218,19 +218,8 @@ $('.form-data-table').on('submit', function(event){
              */
   })
 
-    $.fn.datetimepicker.dates['pt'] = {
-        days: ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"],
-        daysShort: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab", "Dom"],
-        daysMin: ["Do", "Se", "Te", "Qu", "Qu", "Se", "Sa", "Do"],
-        months: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
-        monthsShort: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
-        today: "Hoje",
-        meridiem:["am","pm"],
-        suffix:["st","nd","rd","th"],
-        clear:"Limpar"
-    };
 
-    moment.locale('pt-br');
+
     </script>
     @endpush
 

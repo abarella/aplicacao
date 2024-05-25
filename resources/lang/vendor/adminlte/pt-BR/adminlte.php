@@ -4,7 +4,7 @@ return [
 
     'full_name' => 'Nome completo',
     'email' => 'Email',
-    'password' => 'Senha',
+    'Password' => 'Senha',
     'retype_password' => 'Repita a senha',
     'remember_me' => 'Lembrar-me',
     'register' => 'Registrar',
@@ -26,4 +26,5 @@ return [
     'verify_request_another' => 'clique aqui para solicitar um novo',
     'confirm_password_message' => 'Por favor, confirme sua senha para continuar.',
     'May' => 'Maio',
+    'Select' => 'Selecione',
 ];

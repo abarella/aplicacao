@@ -588,6 +588,7 @@ return [
                     'asset' => true,
                     'location' => 'vendor/daterangepicker/daterangepicker.js',
                 ],
+                
                 [
                     'type' => 'css',
                     'asset' => true,
