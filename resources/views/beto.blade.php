@@ -148,7 +148,6 @@
                             </x-adminlte-datatable>
 
                             <hr>
-
                                 @php
                                     //$result = App\Http\Controllers\BetoController::func2();
                                     $result = App\Http\Controllers\BetoController::func3();

@@ -14,7 +14,7 @@ class GlobalService {
 
     public static  function populaTabelas(){
 
-        $result = "que DOHA é essa  funcionando";
+        $result = "";
         $dbh = DB::connection()->getPdo();
 
         $sql = "EXEC laravel.dbo.sp_teste";
@@ -27,17 +27,12 @@ class GlobalService {
            $result = DB::select($sql);
         }
 
-        //$result = json_encode($result);
-
         $result = array_map(function ($value){
             return (array)$value;
-        //    return $value;
         },$result);
         //dd($result);
         return $result;
 
-
-        //return $result;
 
     }
 

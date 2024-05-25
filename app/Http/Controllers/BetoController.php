@@ -64,7 +64,6 @@ class BetoController extends Controller
         return $result;
     }
 
-
     public static function func3(){
 
         $result = GlobalService::populaTabelas();
