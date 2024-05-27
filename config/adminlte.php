@@ -394,6 +394,16 @@ return [
             'icon_color' => 'cyan',
             'url' => '#',
         ],
+        [
+            'text' => '',
+            'icon_color' => 'white',
+            'url' => '#',
+        ],
+        [
+            'text' => '',
+            'icon_color' => 'white',
+            'url' => '#',
+        ],
     ],
 
     /*
