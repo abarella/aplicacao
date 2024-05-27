@@ -34986,6 +34986,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   font-weight: 300;
   margin-bottom: .9rem;
   text-align: center;
+  display:none;
 }
 
 .login-logo a,
@@ -53083,10 +53084,45 @@ a.text-muted:hover {
     width: 20rem;
     display: inline-block;
     z-index: 1100;
+  }
 
+
+
+.applicationname-light-login{
+    position: fixed;
+    top:0;
+    height: 65px;
+    width: 100%;
+    border-bottom: 4px #feaa13 solid;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87B8FA', endColorstr='#397BC9'); /* for IE */
+    background: -moz-linear-gradient(top, #87B8FA, #397BC9);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#87B8FA), to(#397BC9));
+    background: -webkit-linear-gradient(top, #87B8FA, #397BC9);
+    background: -o-linear-gradient(top, #87B8FA, #397BC9);
+    background: linear-gradient(to bottom, #87B8FA, #397BC9);
+    padding: 0 20px; border-bottom: 4px solid #feaa13; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;
+    text-align: center;
+    font-size: 2em;
+    color:#fff;
+  }
+
+
+.main-footer-login{
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    text-align: left;
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #397BC9;
+    border-top: 4px #feaa13 solid;
+    color: #FFFFFF;
+    font-size: 11px;
+    xpadding: 3px 0px;
+    xmargin:0 auto;
+    z-index: 2000;
 
 
   }
-
 /*# sourceMappingURL=adminlte.css.map */
 

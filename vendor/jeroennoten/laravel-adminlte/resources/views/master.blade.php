@@ -15,11 +15,11 @@
     {{-- Title --}}
     <title>
         @yield('title_prefix', config('adminlte.title_prefix', ''))
-        @yield('title', config('adminlte.title', 'Projeto 5'))
+        @yield('title', config('adminlte.title', 'Projeto 1'))
         @yield('title_postfix', config('adminlte.title_postfix', ''))
     </title>
 
-    <div class="applicationname-light">Nome da Aplicação</div>
+    <div class="applicationname-light-login" style='display:inline'>Projeto 1</div>
 
     {{-- Custom stylesheets (pre AdminLTE) --}}
     @yield('adminlte_css_pre')
@@ -93,7 +93,7 @@
         <script src="{{ mix(config('adminlte.laravel_mix_js_path', 'js/app.js')) }}"></script>
     @endif
 
-    <footer class="main-footer">
+    <footer class="main-footer-login">
         Alberto Barella Jr&nbsp;<a href="https:\\abjinfo.com.br"> - abjinfo.com.br</a>
     </footer>
 
