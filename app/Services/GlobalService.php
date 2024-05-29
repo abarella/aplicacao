@@ -6,7 +6,8 @@ use App\Models\Produto\ProdutoAtividade;
 use Illuminate\Support\Facades\DB;
 
 /**
- * Uma especie de classe facade com todas as procedures necessária para o sistema IPEN
+ * Uma especie de classe facade com todas as procedures necessária para o sistema
+ *
  * @author Alberto Barella Junior <albertoabjinfo.com.br>
  */
 class GlobalService {
