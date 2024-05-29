@@ -11,6 +11,10 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
+
+                    <p class="mb-0">O projeto esta disponível em
+                        <a href="https://github.com/abarella/aplicacao/" >https://github.com/abarella/aplicacao/</a>
+                    </p>
                     <p class="mb-0">Você está logado!</p>
                     <p class="mb-0">Você está logado!</p>
                     <p class="mb-0">Você está logado!</p>
