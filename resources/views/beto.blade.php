@@ -5,7 +5,7 @@
 @section('title', 'Projeto 1')
 
 @section('content_header')
-    <h5 class="m-0 text-blue">BETO</h5>
+    <h5 class="m-0 text-gray">BETO</h5>
 @stop
 
 @section('content')

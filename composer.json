@@ -6,8 +6,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "directorytree/ldaprecord-laravel": "^3.3",
         "jeroennoten/laravel-adminlte": "^3.11",
         "laravel/framework": "^11.0",
+        "laravel/sanctum": "^4.0",
+        "laravel/telescope": "^5.0",
         "laravel/tinker": "^2.9",
         "laravel/ui": "^4.5"
     },
@@ -52,9 +55,10 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": ["laravel/telescope"]
         }
     },
+
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",

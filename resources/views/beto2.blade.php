@@ -1,23 +1,37 @@
 @extends('adminlte::page')
 @section('title', 'Projeto 1')
 @section('content_header')
-    <h5 class="m-0 text-blue">BETO2</h5>
-    <input type="datetime-local" class='form-control' id='v1' name='v1'>
 
-    <div class="icheck-primary">
-        <input type="checkbox" id="checkbox1">
-        <label for="checkbox1">
-            Checkbox Label
-        </label>
-    </div>
+@section('content_header')
+    <h5 class="m-0 text-gray">BETO 2</h5>
+@stop
 
-    {{-- <div class="info-box bg-gradient-warning">
-        <span class="info-box-icon"><i class="far fa-copy"></i></span>
-        <div class="info-box-content">
-            <span class="info-box-text">Uploads</span>
-            <span class="info-box-number">13,648</span>
+@section('content')
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <input type="datetime-local" class='form-control' id='v1' name='v1'>
+
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1">
+                                Checkbox Label
+                            </label>
+                        </div>
+                        <input type='button' onclick='salvar()' value='salvar Swal' /></button>
+                        <button type="button" class="btn btn-success swalDefaultSuccess"></button>
+                        <button type="button" class="btn btn-danger swalDefaultError"></button>
+                        <button type="button" class='btn btn-default' onclick="salvar1('success','mensagem')"  value='teste'>teste</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> --}}
+    </div>
+</div>
 @stop
 
 @push('js')
@@ -57,11 +71,5 @@
 @endpush
 
 
-@section('content')
 
-    <input type='button' onclick='salvar()' value='salvar Swal' /></button>
-    <button type="button" class="btn btn-success swalDefaultSuccess"></button>
-    <button type="button" class="btn btn-danger swalDefaultError"></button>
-    <button type="button" class='btn btn-default' onclick="salvar1('success','mensagem')"  value='teste'>teste</button>
 
-        @stop
