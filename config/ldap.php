@@ -15,7 +15,7 @@ return [
 
 
 
-    'default' => env('LDAP_CONNECTION', 'default'),
+    'default' => env('LDAP_CONNECTION', 'IPEN'),
 
     /*
     |--------------------------------------------------------------------------
@@ -30,12 +30,12 @@ return [
 
     'connections' => [
 
-        'default' => [
-            'hosts' => [env('LDAP_HOST', 'xx.xxxx.xx')],
-            'username' => env('LDAP_USERNAME', 'xxxxxx@xxxxx.xx'),
-            'password' => env('LDAP_PASSWORD', 'xxxxxxxxx'),
+        'IPEN' => [
+            'hosts' => [env('LDAP_HOST', 'ip.ipen.br')],
+            'username' => env('LDAP_USERNAME', 'alberto.j-basis@ipen.br'),
+            'password' => env('LDAP_PASSWORD', 'ABJ010359'),
             'port' => env('LDAP_PORT', 389),
-            'base_dn' => env('LDAP_BASE_DN', 'DC=xx,DC=xxxx,DC=xx'),
+            'base_dn' => env('LDAP_BASE_DN', 'DC=ip,DC=ipen,DC=br'),
             'timeout' => env('LDAP_TIMEOUT', 5),
             'use_ssl' => env('LDAP_SSL', false),
             'use_tls' => env('LDAP_TLS', false),
