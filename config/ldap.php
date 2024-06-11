@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('LDAP_CONNECTION', 'IPEN'),
+    'default' => env('LDAP_CONNECTION', 'default'),
 
     /*
     |--------------------------------------------------------------------------
@@ -31,7 +31,7 @@ return [
     'connections' => [
 
 
-        'IPEN' => [
+        'default' => [
             'hosts' => [env('LDAP_HOST', 'xx.xxxx.xx')],
             'username' => env('LDAP_USERNAME', 'ddddd@xxx.xx'),
             'password' => env('LDAP_PASSWORD', 'xxxxxxxxx'),
