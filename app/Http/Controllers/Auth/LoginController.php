@@ -35,14 +35,14 @@ class LoginController extends Controller
     protected function credentials(Request $request)
     {
         return [
-            'uid' => $request->username,
+            'samaccountname' => $request->username,
             'password' => $request->password,
-            'fallback' => [
-                'username' => $request->username,
-                'password' => $request->password,
-            ],
         ];
     }
+
+
+
+
     //protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
