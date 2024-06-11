@@ -16,5 +16,5 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-/config/ldap.php
+/app/config/ldap.php
 
