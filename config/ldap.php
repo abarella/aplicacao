@@ -1,7 +1,5 @@
 <?php
 
-
-
 return [
 
     /*
@@ -31,8 +29,6 @@ return [
     */
 
     'connections' => [
-
-
 
         'IPEN' => [
             'hosts' => [env('LDAP_HOST', 'ip.ipen.br')],
