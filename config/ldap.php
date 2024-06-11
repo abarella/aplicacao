@@ -15,6 +15,7 @@ return [
     |
     */
 
+
     'default' => env('LDAP_CONNECTION', 'IPEN'),
 
     /*
