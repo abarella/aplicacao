@@ -10,7 +10,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 use LdapRecord\Laravel\Auth\LdapAuthenticatable;
 use LdapRecord\Laravel\Auth\AuthenticatesWithLdap;
-
+use Carbon\Carbon;
 
 
 class User extends Authenticatable implements LdapAuthenticatable
@@ -57,4 +57,9 @@ class User extends Authenticatable implements LdapAuthenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function fromDateTime($value)
+    {
+      return Carbon::parse(parent::fromDateTime($value))->format('Y-d-m H:i:s');
+    }
 }
