@@ -22,3 +22,5 @@ Route::post('/beto', [App\Http\Controllers\BetoController::class, 'func1'])->nam
 
 Route::get ('/beto2', [App\Http\Controllers\Beto2Controller::class, 'index'])->name('beto2');
 Route::post('/beto2', [App\Http\Controllers\Beto2Controller::class, 'func1'])->name('beto2');
+
+Route::get ('/useradmin', [\App\Http\Controllers\UserController\adminuserController::class, 'index'])->name('useradmin');

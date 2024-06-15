@@ -336,6 +336,13 @@ return [
         ],
 
         [
+            'text' => 'useradmin',
+            'url' => 'useradmin',
+            'icon' => 'fas fa-fw fa-camera-retro ',
+        ],
+
+
+        [
             'text' => 'change_password',
             'url' => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
