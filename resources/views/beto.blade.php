@@ -97,13 +97,13 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-8">
                                 lado 2&nbsp;<hr>
                                 @php
                                     $heads = [
                                         'ID',
                                         'Name',
-                                        ['label' => 'Phone', 'width' => 40],
+                                        ['label' => 'Phone', 'width' => 50],
                                         ['label' => 'Actions', 'no-export' => true, 'width' => 5],
                                     ];
 
@@ -126,9 +126,10 @@
                                             [5, 'Peter Sousa', '+69 (555) 12367345243', '<nobr>'.$btnEdit.$btnDelete.$btnDetails.'</nobr>'],
                                             [6, 'Peter Sousa', '+69 (555) 12367345243', '<nobr>'.$btnEdit.$btnDelete.$btnDetails.'</nobr>'],
                                             [7, 'Peter Sousa', '+69 (555) 12367345243', '<nobr>'.$btnEdit.$btnDelete.$btnDetails.'</nobr>'],
-                                            [8, 'Peter Sousa', '+69 (555) 12367345243', '<nobr>'.$btnEdit.$btnDelete.$btnDetails.'</nobr>'],
+                                            [8, 'Peter Sousa de Maria Machado e Olveira Bragança asdf asdf asdf asdf asdf asdf asdf asdf asfd asdf asdf asdf asdf asdf as fdasdf asfdx', '+69 (555) 12367345243 qwqer qwer qwer qwer qwer qwre qwer q qwerqwre', '<nobr>'.$btnEdit.$btnDelete.$btnDetails.'</nobr>'],
                                         ],
                                         'order' => [[0, 'asc']],
+                                        'responsive' => true,
                                         'columns' => [null, null, null, ['orderable' => false]],
                                     ];
                                     //dd($config);
@@ -136,8 +137,10 @@
                                     $config["lengthMenu"] = [3, 5, 50, 100, 500];
                                     $config['language'] = [ 'url' => 'https://cdn.datatables.net/plug-ins/2.0.7/i18n/pt-BR.json' ];
                                 @endphp
+
                             <x-adminlte-datatable id="table1" :heads="$heads" head-theme="light" :config="$config"
-                            striped hoverable bordered compressed compact with-buttons>
+                            striped hoverable bordered compressed compact with-buttons >
+
                                 @foreach($config['data'] as $row)
                                     <tr>
                                         @foreach($row as $cell)
@@ -164,6 +167,7 @@
 
                                     $config1 = [
                                         'data1' =>$result,
+                                        'responsive' => true,
                                         'order1' => [[1, 'desc']],
                                         'columns1' => [null, null, null, null],
                                         'stateSave'=>true,
