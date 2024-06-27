@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 /**
  * Uma especie de classe facade com todas as procedures necessária para o sistema
  *
- * @author Alberto Barella Junior <albertoabjinfo.com.br>
+ * @author Alberto Barella Junior <alberto@abjinfo.com.br>
  */
 class GlobalService {
 
