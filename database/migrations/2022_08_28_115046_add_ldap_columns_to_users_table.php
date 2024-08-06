@@ -12,9 +12,10 @@ class AddLdapColumnsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('username')->unique();
-            $table->string('guid')->unique()->nullable();
-            $table->string('domain')->nullable();
+            $table->string('username');
+            $table->string('email');
+            $table->string('guid');
+            $table->string('domain');
         });
     }
 

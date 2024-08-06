@@ -18,7 +18,7 @@ class GlobalService {
         $result = "";
         $dbh = DB::connection()->getPdo();
 
-        $sql = "EXEC laravel.dbo.sp_teste";
+        $sql = "EXEC PORTAL_CORPORATIVO.dbo.sp_teste";
 
         $sth = $dbh->prepare($sql);
         $sth->execute();

@@ -68,7 +68,7 @@ return [
                 'model' => App\Models\User::class,
                 'sync_passwords' => true,
                 'sync_attributes' => [
-                    'name' => 'sn',
+                    'name' => 'displayname',
                     'username'=> 'samaccountname',
                     'email' => 'mail',
                 ],
